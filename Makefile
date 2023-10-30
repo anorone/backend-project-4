@@ -12,5 +12,10 @@ lint:
 test:
 	npm run test
 
+coverage:
+	npm run test -- --coverage --coverage-provider=v8
+
 publish:
 	npm publish --dry-run
+
+.PHONY: coverage
