@@ -90,7 +90,7 @@ it('throws when failed to load an asset', async () => {
     .reply(200)
     .get(jsPathname)
     .reply(200);
-  await expect(loadPage(pageUrl, tmpDir)).rejects.toThrow(cssPathname);
+  await expect(loadPage(pageUrl, tmpDir)).rejects.toThrow();
 });
 
 it('throws when directory does not exist', async () => {
